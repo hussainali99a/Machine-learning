@@ -1,0 +1,45 @@
+checking conda version
+
+`conda --version`
+
+create a  new environment
+
+`conda create  -n myenv python=3.11`
+
+activate the environment
+
+`conda activate myenv`
+
+
+if you get error like this : 
+"==> For changes to take effect, close and re-open your current shell. <==
+
+PS D:\Machine-learning> conda activate myenv
+
+CondaError: Run 'conda init' before 'conda activate'
+"
+
+then use command  
+`conda  init powershell`
+
+then kill the current terminal -- open new terminal and write the activate command (`conda activate myenv`)
+
+
+for deactivating environment
+`conda deactivate`
+
+
+other than conda use python venv command
+`python -m venv env`
+
+then
+`venv/Scripts/activate`
+
+
+env will be activated 
+then `pip install numpy`
+or whatever library you want to  download 
+
+then for deactivation
+`deactivate`
+
